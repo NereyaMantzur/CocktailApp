@@ -1,48 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="manifest" href="/manifest.json">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Cocktail Order</title>
+    <title>Cocktail Ordering</title>
+    <link rel="apple-touch-icon" href="icon.png">
 </head>
+
 <body>
-    <header>
-        <h1>Cocktail Order System</h1>
-    </header>
-    
-    <main>
-        <section id="cocktailList">
-            <h2>Available Cocktails</h2>
-            <ul>
-                <li>Margarita</li>
-                <li>Mojito</li>
-                <li>Pina Colada</li>
-                <!-- Add more cocktail options as needed -->
-            </ul>
-        </section>
 
-        <section id="orderForm">
-            <h2>Place Your Order</h2>
-            <form action="submit_order.php" method="post">
-                <label for="cocktailSelection">Select Cocktail:</label>
-                <select id="cocktailSelection" name="cocktail">
-                    <option value="margarita">Margarita</option>
-                    <option value="mojito">Mojito</option>
-                    <option value="pina_colada">Pina Colada</option>
-                    <!-- Add more cocktail options as needed -->
-                </select>
+    <div class="container">
 
-                <label for="quantity">Quantity:</label>
-                <input type="number" id="quantity" name="quantity" min="1" value="1">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-menu">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </div>
 
-                <input type="submit" value="Place Order">
-            </form>
-        </section>
-    </main>
+        <h1> Cocktail Menu</h1>
 
-    <footer>
-        <p>&copy; 2024 Cocktail Order System</p>
-    </footer>
+        <div class="order-status" id="orderStatus"></div>
+
+        <div class="menu-overlay" id="menuOverlay" onclick="toggleMenu()">
+            <div class="menu-options">
+                <p onclick="selectOption('מי אנחנו')"><b>מי אנחנו</b></p>
+                <p onclick="selectOption('Option 2')"><b>תפריט</b></p>
+                <p onclick="selectOption('Option 3')"><b>צרו קשר</b></p>
+                <!-- Add more options as needed -->
+            </div>
+        </div>
+
+
+        <div class="cocktail-grid">
+            <a href="https://www.example.com">
+                <div class="cocktail-item" onclick="orderCocktail('Margarita')">
+                    <img src="margarita.jpg" alt="Margarita">
+                    <p>Margarita</p>
+                </div>
+            </a>
+
+            <a href="https://www.example.com">
+                <div class="cocktail-item" onclick="orderCocktail('Martini')">
+                    <img src="martini.jpg" alt="Martini">
+                    <p>Martini</p>
+                </div>
+            </a>
+            <a href="https://www.example.com">
+                <div class="cocktail-item" onclick="orderCocktail('Bloody Mary')">
+                    <img src="bloodyMary.jpg" alt="Bloody Mary">
+                    <p>Bloody Mary</p>
+                </div>
+            </a>
+            <a href="https://www.example.com">
+                <div class="cocktail-item" onclick="orderCocktail('Pina Colada')">
+                    <img src="pinaColada.avif" alt="Pina Colada">
+                    <p>Pina Colada</p>
+                </div>
+            </a>
+
+
+
+            <!-- Add more cocktail items as needed -->
+        </div>
+
+        <div class="order-status" id="orderStatus"></div>
+
+        <footer>
+            <p>&copy; 2024 Afeka cocktail machine
+
+            </p>
+        </footer>
+    </div>
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>

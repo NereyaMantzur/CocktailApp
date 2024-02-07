@@ -1,0 +1,16 @@
+{
+  "name": "Cocktail app",
+  "short_name": "CocktailApp",
+  "description": "Order Cocktail using this app",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0FFF00",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
