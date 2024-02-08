@@ -8,7 +8,7 @@ function selectOption(option) {
     toggleMenu(); // Close the menu after selecting an option
 }
 
-document.addEventListener('click', closeOptions);
+document.addEventListener('dblclick', closeOptions);
 document.addEventListener('touchstart', closeOptions);
 function toggleOptions(event, cocktailName) {
     var clickedOptions = event.currentTarget.querySelector('.options');
