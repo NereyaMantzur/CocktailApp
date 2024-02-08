@@ -31,21 +31,29 @@
         <div class="menu-overlay" id="menuOverlay" onclick="toggleMenu()">
             <div class="menu-options">
                 <p onclick="selectOption('מי אנחנו')"><b>מי אנחנו</b></p>
-                <p onclick="selectOption('Option 2')"><b>תפריט</b></p>
-                <p onclick="selectOption('Option 3')"><b>צרו קשר</b></p>
+                <p onclick="selectOption('תפריט')"><b>תפריט</b></p>
+                <p onclick="selectOption('צרו קשר')"><b>צרו קשר</b></p>
                 <!-- Add more options as needed -->
             </div>
         </div>
 
 
-        <div class="cocktail-grid">
+        <div class="cocktail-grid" id="cocktail-item" onclick="openCocktailInfo()">
 
             <div class="cocktail-item" onclick="orderCocktail('Margarita')">
                 <img src="margarita.jpg" alt="Margarita">
                 <p>Margarita</p>
             </div>
 
-
+            <div class="cocktail-item" onclick="toggleOptions(event, 'margarita')">
+                <img src="margarita.jpg" alt="Margarita">
+                <p>Margarita</p>
+                <div class="options">
+                    <p>Option 1</p>
+                    <p>Option 2</p>
+                    <p>Option 3</p>
+                </div>
+            </div>
 
             <div class="cocktail-item" onclick="orderCocktail('Martini')">
                 <img src="martini.jpg" alt="Martini">
