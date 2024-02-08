@@ -40,9 +40,11 @@ body {
 
     .menu-options p {
         font-family: luizi;
+
         @media screen {
             font-size: calc(20px);
         }
+
         margin: 10px 0;
         cursor: pointer;
         color: #f4f4f4;
@@ -98,6 +100,13 @@ h1 {
 
 .options {
     display: none;
+    background-color: #8b8f12;
+    border-radius: 150px;
+    font-style: italic;
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(75%, 100%);
 }
 
 .cocktail-item:hover {
