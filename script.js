@@ -13,20 +13,21 @@ document.addEventListener('click', closeOptions);
 
   function toggleOptions(event, cocktailName) {
     var clickedOptions = event.currentTarget.querySelector('.options');
-    var allOptions = document.querySelectorAll('.options');
-
-    allOptions.forEach(function (options) {
-      if (options !== clickedOptions) {
-        options.style.display = 'none';
-      }
-    });
-
-    clickedOptions.style.display = (clickedOptions.style.display === 'block') ? 'none' : 'block';
     
     if (clickedOptions.style.display === 'block') {
+      clickedOptions.style.display = 'none';
+    } else {
+      // Close options for all items
+      var allOptions = document.querySelectorAll('.options');
+      allOptions.forEach(function (options) {
+        options.style.display = 'none';
+      });
+      
+      clickedOptions.style.display = 'block';
       console.log('Selected cocktail: ' + cocktailName);
       // Additional logic for handling the selection
     }
+
     event.stopPropagation();
   }
 
