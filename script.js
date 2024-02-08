@@ -9,7 +9,7 @@ function selectOption(option) {
 }
 
 document.addEventListener('click', closeOptions);
-document.addEventListener('touchend', closeOptions);
+
 function toggleOptions(event, cocktailName) {
     var clickedOptions = event.currentTarget.querySelector('.options');
 
