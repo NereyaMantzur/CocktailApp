@@ -1,5 +1,5 @@
 function toggleMenu() {
-    var menuOverlay = document.getElementById('menuOverlay');
+    let  menuOverlay = document.getElementById('menuOverlay');
     menuOverlay.classList.toggle('show-menu');
 }
 
@@ -11,13 +11,13 @@ function selectOption(option) {
 document.addEventListener('click', closeOptions);
 
 function toggleOptions(event, cocktailName) {
-    var clickedOptions = event.currentTarget.querySelector('.options');
+    let clickedOptions = event.currentTarget.querySelector('.options');
 
     if (clickedOptions.style.display === 'block') {
         clickedOptions.style.display = 'none';
     } else {
         // Close options for all items
-        var allOptions = document.querySelectorAll('.options');
+        let allOptions = document.querySelectorAll('.options');
         allOptions.forEach(function (options) {
             options.style.display = 'none';
         });
@@ -32,7 +32,7 @@ function toggleOptions(event, cocktailName) {
 
 function closeOptions() {
     // Close options for all items
-    var allOptions = document.querySelectorAll('.options');
+    let allOptions = document.querySelectorAll('.options');
     allOptions.forEach(function (options) {
         options.style.display = 'none';
     });
