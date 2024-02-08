@@ -7,6 +7,13 @@ function selectOption(option) {
     alert('Selected: ' + option); // You can replace this with your desired functionality
     toggleMenu(); // Close the menu after selecting an option
 }
+document.addEventListener('click', function (event) {
+    // Close options for all items when clicking outside
+    var allOptions = document.querySelectorAll('.options');
+    allOptions.forEach(function (options) {
+        options.style.display = 'none';
+    });
+});
 function toggleOptions(event, cocktailName) {
     var options = event.currentTarget.querySelector('.options');
     options.style.display = (options.style.display === 'block') ? 'none' : 'block';
@@ -16,3 +23,4 @@ function toggleOptions(event, cocktailName) {
     }
     event.stopPropagation();
 }
+
