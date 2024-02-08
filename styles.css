@@ -95,7 +95,7 @@ h1 {
     background-color: #aceaac;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1000px) {
     .cocktail-item.scrolled {
         transform: scale(1.05);
         background-color: #aceaac;
