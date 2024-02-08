@@ -14,4 +14,5 @@ function toggleOptions(event, cocktailName) {
         console.log('Selected cocktail: ' + cocktailName);
         // Additional logic for handling the selection
     }
+    event.stopPropagation();
 }
