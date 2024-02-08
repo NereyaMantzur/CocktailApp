@@ -16,6 +16,14 @@
 
 
 body {
+    .menu-icon {
+        cursor: pointer;
+
+        display: inline-block;
+        cursor: pointer;
+        font-size: 24px;
+        line-height: 1;
+    }
 
     .menu-overlay {
         display: none;
@@ -89,6 +97,7 @@ h1 {
 }
 
 .cocktail-item {
+    font-size: larger;
     cursor: pointer;
     text-align: center;
     padding: 10px;
@@ -99,8 +108,10 @@ h1 {
 }
 
 .options {
+    font-size: large;
+    color: rgb(255, 255, 255);
     display: none;
-    background-color: #8b8f12;
+    background-color: #005606;
     border-radius: 150px;
     font-style: italic;
     width: 40%;
