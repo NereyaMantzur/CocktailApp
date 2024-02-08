@@ -82,8 +82,8 @@ h1 {
     text-align: center;
     padding: 20px;
     border-radius: 15px;
-    background-color: #dbf2df;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
@@ -95,7 +95,7 @@ h1 {
 .cocktail-item img {
     width: 100%;
     max-height: 150px;
-    object-fit: fill;
+    object-fit: cover;
     border-radius: 15px;
 }
 
