@@ -2,10 +2,12 @@
     font-family: luizi;
     src: url(luizi.otf)
 }
+
 @keyframes fallDown {
     from {
         transform: translateY(-100%);
     }
+
     to {
         transform: translateY(0);
     }
@@ -14,7 +16,7 @@
 body {
     .menu-overlay {
         display: none;
-        animation:  fallDown 150ms ease-in-out;
+        animation: fallDown 150ms ease-in-out;
         position: fixed;
         top: 0;
         left: 0;
@@ -23,7 +25,7 @@ body {
         background-color: rgba(144, 219, 162, 0.897);
         z-index: 2;
     }
-    
+
 
     .menu-options {
         position: absolute;
@@ -68,7 +70,8 @@ h1 {
     color: #333;
     font-size: 40px;
     font-style: normal;
-    font-optical-sizing: auto}
+    font-optical-sizing: auto
+}
 
 .cocktail-grid {
     display: grid;
@@ -85,6 +88,11 @@ h1 {
     background-color: #f5f5f5;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.options {
+    display: none;
+   
 }
 
 .cocktail-item:hover {
@@ -104,4 +112,3 @@ h1 {
     font-weight: bold;
     color: #555;
 }
-
