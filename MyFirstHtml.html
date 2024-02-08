@@ -64,14 +64,26 @@
             </div>
 
 
-            <div class="cocktail-item" onclick="orderCocktail('Bloody Mary')">
+            <div class="cocktail-item" onclick="toggleOptions(event,'Bloody Mary')"
+                ontouchstart="toggleOptions(event,'Bloody Mary')">
                 <img src="bloodyMary.jpg" alt="Bloody Mary">
                 <p>Bloody Mary</p>
+                <div class="options">
+                    <p>Option A</p>
+                    <p>Option B</p>
+                    <p>Option C</p>
+                </div>
             </div>
 
-            <div class="cocktail-item" onclick="orderCocktail('Pina Colada')">
+            <div class="cocktail-item" onclick="toggleOptions(event,'Pina Colada')"
+                ontouchstart="toggleOptions(event,'Pina Colada')">
                 <img src="pinaColada.avif" alt="Pina Colada">
                 <p>Pina Colada</p>
+                <div class="options">
+                    <p>Option A</p>
+                    <p>Option B</p>
+                    <p>Option C</p>
+                </div>
             </div>
 
 
