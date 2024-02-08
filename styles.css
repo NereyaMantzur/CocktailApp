@@ -2,10 +2,12 @@
     font-family: luizi;
     src: url(luizi.otf)
 }
+
 @keyframes fallDown {
     from {
         transform: translateY(-100%);
     }
+
     to {
         transform: translateY(0);
     }
@@ -14,7 +16,7 @@
 body {
     .menu-overlay {
         display: none;
-        animation:  fallDown 150ms ease-in-out;
+        animation: fallDown 150ms ease-in-out;
         position: fixed;
         top: 0;
         left: 0;
@@ -23,7 +25,7 @@ body {
         background-color: rgba(144, 219, 162, 0.897);
         z-index: 2;
     }
-    
+
 
     .menu-options {
         position: absolute;
@@ -68,7 +70,8 @@ h1 {
     color: #333;
     font-size: 40px;
     font-style: normal;
-    font-optical-sizing: auto}
+    font-optical-sizing: auto
+}
 
 .cocktail-grid {
     display: grid;
@@ -92,15 +95,21 @@ h1 {
     background-color: #aceaac;
 }
 
-.cocktail-item img {
-    width: 100%;
-    max-height: 150px;
-    object-fit: cover;
-    border-radius: 15px;
-}
+@media only screen and (max-width: 767px) {
+    .cocktail-item.scrolled {
+        transform: scale(1.05);
+        background-color: #aceaac;
+    }
 
-.order-status {
-    margin-top: 30px;
-    font-weight: bold;
-    color: #555;
-}
+    .cocktail-item img {
+        width: 100%;
+        max-height: 150px;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+    .order-status {
+        margin-top: 30px;
+        font-weight: bold;
+        color: #555;
+    }
