@@ -7,7 +7,9 @@ function selectOption(option) {
     alert('Selected: ' + option); // You can replace this with your desired functionality
     toggleMenu(); // Close the menu after selecting an option
 }
+
 document.addEventListener('click', function (event) {
+document.addEventListener('touchstart', closeOptions);
     // Close options for all items when clicking outside
     var allOptions = document.querySelectorAll('.options');
     allOptions.forEach(function (options) {
