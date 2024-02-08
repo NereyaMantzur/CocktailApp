@@ -9,34 +9,33 @@ function selectOption(option) {
 }
 
 document.addEventListener('click', closeOptions);
-  document.addEventListener('touchstart', closeOptions);
-
-  function toggleOptions(event, cocktailName) {
+document.addEventListener('touchstart', closeOptions);
+function toggleOptions(event, cocktailName) {
     var clickedOptions = event.currentTarget.querySelector('.options');
-    
+
     if (clickedOptions.style.display === 'block') {
-      clickedOptions.style.display = 'none';
+        clickedOptions.style.display = 'none';
     } else {
-      // Close options for all items
-      var allOptions = document.querySelectorAll('.options');
-      allOptions.forEach(function (options) {
-        options.style.display = 'none';
-      });
-      
-      clickedOptions.style.display = 'block';
-      console.log('Selected cocktail: ' + cocktailName);
-      // Additional logic for handling the selection
+        // Close options for all items
+        var allOptions = document.querySelectorAll('.options');
+        allOptions.forEach(function (options) {
+            options.style.display = 'none';
+        });
+
+        clickedOptions.style.display = 'block';
+        console.log('Selected cocktail: ' + cocktailName);
+        // Additional logic for handling the selection
     }
 
     event.stopPropagation();
-  }
+}
 
-  function closeOptions() {
+function closeOptions() {
     // Close options for all items
     var allOptions = document.querySelectorAll('.options');
     allOptions.forEach(function (options) {
-      options.style.display = 'none';
+        options.style.display = 'none';
     });
-  }
+}
 
 
