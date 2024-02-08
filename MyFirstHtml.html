@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
+    <title>Afeka Cocktails</title>
     <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" href="icon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Cocktail Ordering</title>
-    <link rel="apple-touch-icon" href="icon.png">
 </head>
 
 <body>
@@ -39,31 +39,30 @@
 
 
         <div class="cocktail-grid">
-            <a href="https://www.example.com">
-                <div class="cocktail-item" onclick="orderCocktail('Margarita')">
-                    <img src="margarita.jpg" alt="Margarita">
-                    <p>Margarita</p>
-                </div>
-            </a>
 
-            <a href="https://www.example.com">
-                <div class="cocktail-item" onclick="orderCocktail('Martini')">
-                    <img src="martini.jpg" alt="Martini">
-                    <p>Martini</p>
-                </div>
-            </a>
-            <a href="https://www.example.com">
-                <div class="cocktail-item" onclick="orderCocktail('Bloody Mary')">
-                    <img src="bloodyMary.jpg" alt="Bloody Mary">
-                    <p>Bloody Mary</p>
-                </div>
-            </a>
-            <a href="https://www.example.com">
-                <div class="cocktail-item" onclick="orderCocktail('Pina Colada')">
-                    <img src="pinaColada.avif" alt="Pina Colada">
-                    <p>Pina Colada</p>
-                </div>
-            </a>
+            <div class="cocktail-item" onclick="orderCocktail('Margarita')">
+                <img src="margarita.jpg" alt="Margarita">
+                <p>Margarita</p>
+            </div>
+
+
+
+            <div class="cocktail-item" onclick="orderCocktail('Martini')">
+                <img src="martini.jpg" alt="Martini">
+                <p>Martini</p>
+            </div>
+
+
+            <div class="cocktail-item" onclick="orderCocktail('Bloody Mary')">
+                <img src="bloodyMary.jpg" alt="Bloody Mary">
+                <p>Bloody Mary</p>
+            </div>
+
+            <div class="cocktail-item" onclick="orderCocktail('Pina Colada')">
+                <img src="pinaColada.avif" alt="Pina Colada">
+                <p>Pina Colada</p>
+            </div>
+
 
 
 
@@ -80,7 +79,16 @@
     </div>
 
 
-    <script src="script.js"></script>
+    <script>
+        function toggleMenu() {
+            var menuOverlay = document.getElementById('menuOverlay');
+            menuOverlay.classList.toggle('show-menu');
+        }
+
+        function selectOption(option) {
+            alert('Selected: ' + option); // You can replace this with your desired functionality
+            toggleMenu(); // Close the menu after selecting an option
+        }</script>
 </body>
 
 </html>
