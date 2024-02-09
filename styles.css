@@ -29,7 +29,7 @@
 
 
 .menu-overlay {
-    background-color: #009a00e2;
+    background-color: #63c463e2;
     display: none;
     animation: getIn 250ms ease-in-out;
     position: absolute;
@@ -39,26 +39,26 @@
     height: 50%;
     box-shadow: rgb(0, 0, 0);
     z-index: 2;
+    font-size: 30px;
     /* Semi-transparent black overlay */
-}
 
-.menu-options {
-    margin-top: 80%;
-    padding: 0px;
-}
 
-.menu-options p {
-    font-family: luizi;
-    border-radius: 0px;
-    padding-top: 100px;
-    padding: 5px;
-    cursor: pointer;
-    background-color: #7bd282;
-    text-align: center;
-    margin-bottom: -10px;
-    color: #f4f4f4;
-    -webkit-text-stroke: 0.1px black;
-    z-index: 2;
+    .menu-options {
+        margin-top: 80%;
+    }
+
+    .menu-options p {
+        font-family: luizi;
+        border-radius: 15px;
+        padding: 10px;
+        margin: -10px;
+        cursor: pointer;
+        background-color: #7bd282;
+        text-align: center;
+        color: #f4f4f4;
+        -webkit-text-stroke: 0.1px black;
+        z-index: 2;
+    }
 }
 
 .show-menu {
