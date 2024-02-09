@@ -18,14 +18,57 @@
 
       <div class="order-status" id="orderStatus"></div>
 
-      <div class="menu-overlay" id="menuOverlay" onclick="toggleMenu()">
-        <div class="menu-options">
-          <p onclick="selectOption('מי אנחנו')"><b>מי אנחנו</b></p>
-          <p onclick="selectOption('תפריט')"><b>תפריט</b></p>
-          <p onclick="selectOption('צרו קשר')"><b>צרו קשר</b></p>
-          <!-- Add more options as needed -->
-        </div>
-      </div>  
+     <nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a href="#" class="menu-logo">
+    <img src="https://wweb.dev/resources/navigation-generator/logo-placeholder.png" alt="My Awesome Website"/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menu">
+    <ul>
+      <li>
+        <a href="#home">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#pricing">
+          Pricing
+        </a>
+      </li>
+      <li>
+        <a href="#blog">
+          Blog
+        </a>
+      </li>
+      <li>
+        <a href="#docs">
+          Docs
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="#signup">
+          Sign-up
+        </a>
+      </li>
+      <li>
+        <a href="#login">
+          Login
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
     <h1>Cocktail Menu</h1>
       <div
         class="cocktail-grid"
