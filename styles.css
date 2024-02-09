@@ -47,9 +47,7 @@
     padding: 0px;
 }
 
-
-.menu-options p :hover {
-    transform: scale(1.05);
+.menu-options p {
     font-family: luizi;
     border-radius: 0px;
     padding-top: 100px;
