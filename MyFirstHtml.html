@@ -10,13 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body>
-
-
-
-
-  <div class="order-status" id="orderStatus"></div>
-
+<body><nav class="container">
   <nav class="menu-container">
     <!-- burger menu -->
     <input type="checkbox" aria-label="Toggle menu" />
@@ -67,52 +61,53 @@
       </ul>
     </div>
   </nav>
-
-  <h1>Cocktail Menu</h1>
-  <div class="cocktail-grid" id="cocktail-item" onclick="openCocktailInfo()">
-    <div class="cocktail-item" onclick="toggleOptions(event,'Margarita')">
-      <img src="margarita.jpg" alt="Margarita" />
-      <p>Margarita</p>
-      <div class="options">
-        <p class="cocktail-order"> <b>Order!</b></p>
-      </div>
-    </div>
-
-    <div class="cocktail-item" onclick="toggleOptions(event,'Martini')">
-      <img src="martini.jpg" alt="Martini" />
-      <p>Martini</p>
-      <div class="options">
-        <p class="cocktail-order"> <b>Order!</b></p>
-      </div>
-    </div>
-
-    <div class="cocktail-item" onclick="toggleOptions(event,'Bloody Mary')">
-      <img src="bloodyMary.jpg" alt="Bloody Mary" />
-      <p>Bloody Mary</p>
-      <div class="options">
-        <p class="cocktail-order"> <b>Order!</b></p>
-      </div>
-    </div>
-
-    <div class="cocktail-item" onclick="toggleOptions(event,'Pina Colada')">
-      <img src="pinaColada.avif" alt="Pina Colada" />
-      <p>Pina Colada</p>
-      <div class="options">
-        <p class="cocktail-order"> <b>Order!</b></p>
+  
+    <h1>Cocktail Menu</h1>
+    <div class="cocktail-grid" id="cocktail-item" onclick="openCocktailInfo()">
+      <div class="cocktail-item" onclick="toggleOptions(event,'Margarita')">
+        <img src="margarita.jpg" alt="Margarita" />
+        <p>Margarita</p>
+        <div class="options">
+          <p class="cocktail-order"> <b>Order!</b></p>
+        </div>
       </div>
 
-      <!-- Add more cocktail items as needed -->
+      <div class="cocktail-item" onclick="toggleOptions(event,'Martini')">
+        <img src="martini.jpg" alt="Martini" />
+        <p>Martini</p>
+        <div class="options">
+          <p class="cocktail-order"> <b>Order!</b></p>
+        </div>
+      </div>
+
+      <div class="cocktail-item" onclick="toggleOptions(event,'Bloody Mary')">
+        <img src="bloodyMary.jpg" alt="Bloody Mary" />
+        <p>Bloody Mary</p>
+        <div class="options">
+          <p class="cocktail-order"> <b>Order!</b></p>
+        </div>
+      </div>
+
+      <div class="cocktail-item" onclick="toggleOptions(event,'Pina Colada')">
+        <img src="pinaColada.avif" alt="Pina Colada" />
+        <p>Pina Colada</p>
+        <div class="options">
+          <p class="cocktail-order"> <b>Order!</b></p>
+        </div>
+
+        <!-- Add more cocktail items as needed -->
+      </div>
+
+      <div class="order-status" id="orderStatus"></div>
     </div>
+    <h4>
+  </nav>
+  <footer>
+    <p>&copy; 2024 Afeka cocktail machine</p>
+  </footer>
+  </4>
 
-    <div class="order-status" id="orderStatus"></div>
-  </div>
-  <h4>
-    <footer>
-      <p>&copy; 2024 Afeka cocktail machine</p>
-    </footer>
-    </4>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
