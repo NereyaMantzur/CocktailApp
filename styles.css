@@ -52,7 +52,7 @@ body {
 }
 
 .menu-container a:hover {
-  color: #00C6A7;
+  color: #00c6a865;
 }
 
 .menu-container input {
@@ -141,7 +141,7 @@ body {
     top: 0;
     margin: -20px;
     padding: 75px 50px 50px;
-    background: #cdcdcd;
+    background: #19be73;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
     transform-origin: 0% 0%;
