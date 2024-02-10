@@ -21,10 +21,11 @@ body {
 
 .menu-container {
   position: relative;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  background: #232323;
+  background: #14967d;
   color: #cdcdcd;
   padding: 20px;
   z-index: 1;

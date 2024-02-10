@@ -1,120 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Afeka Cocktails</title>
-    <link rel="manifest" href="/manifest.json" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="apple-touch-icon" href="icon.png" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
 
-  <body>
-    <div class="container">
-      <div class="menu-icon" onclick="toggleMenu()">&#9776;
-      </div>
+<head>
+  <title>Afeka Cocktails</title>
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="apple-touch-icon" href="icon.png" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
 
-      
+<body>
 
-      <div class="order-status" id="orderStatus"></div>
 
-     <nav class="menu-container">
-  <!-- burger menu -->
-  <input type="checkbox" aria-label="Toggle menu" />
-  <span></span>
-  <span></span>
-  <span></span>
 
-  <!-- logo -->
-  <a href="#" class="menu-logo">
-    <img src="https://wweb.dev/resources/navigation-generator/logo-placeholder.png" alt="My Awesome Website"/>
-  </a>
 
-  <!-- menu items -->
-  <div class="menu">
-    <ul>
-      <li>
-        <a href="#home">
-          Home
-        </a>
-      </li>
-      <li>
-        <a href="#pricing">
-          Pricing
-        </a>
-      </li>
-      <li>
-        <a href="#blog">
-          Blog
-        </a>
-      </li>
-      <li>
-        <a href="#docs">
-          Docs
-        </a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <a href="#signup">
-          Sign-up
-        </a>
-      </li>
-      <li>
-        <a href="#login">
-          Login
-        </a>
-      </li>
-    </ul>
-  </div>
-</nav>
+  <div class="order-status" id="orderStatus"></div>
 
-    <h1>Cocktail Menu</h1>
-      <div
-        class="cocktail-grid"
-        id="cocktail-item"
-        onclick="openCocktailInfo()"
-      >
-        <div class="cocktail-item" onclick="toggleOptions(event,'Margarita')">
-          <img src="margarita.jpg" alt="Margarita" />
-          <p>Margarita</p>
-          <div class="options">
-            <p class="cocktail-order"> <b>Order!</b></p>
-          </div>
-        </div>
+  <nav class="menu-container">
+    <!-- burger menu -->
+    <input type="checkbox" aria-label="Toggle menu" />
+    <span></span>
+    <span></span>
+    <span></span>
 
-        <div class="cocktail-item" onclick="toggleOptions(event,'Martini')">
-          <img src="martini.jpg" alt="Martini" />
-          <p>Martini</p>
-          <div class="options">
-            <p class="cocktail-order"> <b>Order!</b></p>
-          </div>
-        </div>
+    <!-- logo -->
+    <a href="#" class="menu-logo">
+      <img src="logo.png" alt="My Awesome Website" />
+    </a>
 
-        <div class="cocktail-item" onclick="toggleOptions(event,'Bloody Mary')">
-          <img src="bloodyMary.jpg" alt="Bloody Mary" />
-          <p>Bloody Mary</p>
-          <div class="options">
-            <p class="cocktail-order"> <b>Order!</b></p>
-          </div>
-        </div>
-
-        <div class="cocktail-item" onclick="toggleOptions(event,'Pina Colada')">
-          <img src="pinaColada.avif" alt="Pina Colada" />
-          <p>Pina Colada</p>
-          <div class="options">
-          <p class="cocktail-order"> <b>Order!</b></p>
-        </div>
-
-        <!-- Add more cocktail items as needed -->
-      </div>
-
-      <div class="order-status" id="orderStatus"></div>
+    <!-- menu items -->
+    <div class="menu">
+      <ul>
+        <li>
+          <a href="#home">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#pricing">
+            Pricing
+          </a>
+        </li>
+        <li>
+          <a href="#blog">
+            Blog
+          </a>
+        </li>
+        <li>
+          <a href="#docs">
+            Docs
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#signup">
+            Sign-up
+          </a>
+        </li>
+        <li>
+          <a href="#login">
+            Login
+          </a>
+        </li>
+      </ul>
     </div>
-    <h4><footer>
-        <p>&copy; 2024 Afeka cocktail machine</p>
-      </footer></4>
+  </nav>
+
+  <h1>Cocktail Menu</h1>
+  <div class="cocktail-grid" id="cocktail-item" onclick="openCocktailInfo()">
+    <div class="cocktail-item" onclick="toggleOptions(event,'Margarita')">
+      <img src="margarita.jpg" alt="Margarita" />
+      <p>Margarita</p>
+      <div class="options">
+        <p class="cocktail-order"> <b>Order!</b></p>
+      </div>
+    </div>
+
+    <div class="cocktail-item" onclick="toggleOptions(event,'Martini')">
+      <img src="martini.jpg" alt="Martini" />
+      <p>Martini</p>
+      <div class="options">
+        <p class="cocktail-order"> <b>Order!</b></p>
+      </div>
+    </div>
+
+    <div class="cocktail-item" onclick="toggleOptions(event,'Bloody Mary')">
+      <img src="bloodyMary.jpg" alt="Bloody Mary" />
+      <p>Bloody Mary</p>
+      <div class="options">
+        <p class="cocktail-order"> <b>Order!</b></p>
+      </div>
+    </div>
+
+    <div class="cocktail-item" onclick="toggleOptions(event,'Pina Colada')">
+      <img src="pinaColada.avif" alt="Pina Colada" />
+      <p>Pina Colada</p>
+      <div class="options">
+        <p class="cocktail-order"> <b>Order!</b></p>
+      </div>
+
+      <!-- Add more cocktail items as needed -->
+    </div>
+
+    <div class="order-status" id="orderStatus"></div>
+  </div>
+  <h4>
+    <footer>
+      <p>&copy; 2024 Afeka cocktail machine</p>
+    </footer>
+    </4>
 
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
