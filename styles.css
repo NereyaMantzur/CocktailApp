@@ -162,6 +162,7 @@ body {
 
 .container {
   max-width: 11000px;
+  min-width: fit-content;
   margin-top: 0;
   text-align: center;
   background-color: #fff;
