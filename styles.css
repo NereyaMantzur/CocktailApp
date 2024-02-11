@@ -1,18 +1,3 @@
-@font-face {
-  font-family: luizi;
-  src: url(luizi.otf)
-}
-
-@keyframes getIn {
-  from {
-    transform: translatey(-100%);
-  }
-
-  to {
-    transform: translatey(0%);
-  }
-}
-
 body {
   overflow-x: hidden;
   text-align: center;
@@ -24,49 +9,33 @@ body {
   background-color: #f8f8f8;
 }
 
+.container {
+  max-width: 100%;
+  margin-top: -3px;
+  text-align: center;
+  background-color: #fff;
+  padding-bottom: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.175);
+}
+
 .menu-container {
   position: relative;
   border-radius: 5px;
-  display: flex;
-  align-items: center;
   margin-bottom: 20px;
   background: #14967d;
   color: #cdcdcd;
-  padding: 30px;
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
   box-sizing: border-box;
 }
 
-
-.menu-container {
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.menu-logo {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  line-height: 0;
-  margin: 0 20px;
-}
-
 .menu-logo img {
-
-  max-height: 50px;
-}
-
-
-.container {
-  max-width: 1100px;
-  margin-top: 0;
+  position: relative;
+  top: 30px;
+  max-height: 130px;
   text-align: center;
-  background-color: #fff;
-  padding-bottom: 30px;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.175);
 }
 
 h1 {
@@ -96,6 +65,11 @@ h1 {
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
+.cocktail-item:hover {
+  transform: scale(1.05);
+  background-color: #aceaac;
+}
+
 .options {
   font-size: large;
   color: rgb(255, 255, 255);
@@ -107,11 +81,6 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(75%, 190%);
-}
-
-.cocktail-item:hover {
-  transform: scale(1.05);
-  background-color: #aceaac;
 }
 
 .cocktail-item img {
