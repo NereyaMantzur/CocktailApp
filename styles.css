@@ -14,7 +14,7 @@
 }
 
 body {
-  overflow-x: hidden;
+  overflow: hidden;
   font-family: Sans-Serif;
   margin: 0;
   background-color: #005606;
