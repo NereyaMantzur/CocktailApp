@@ -14,10 +14,16 @@
 }
 
 body {
-  overflow: hidden;
-  font-family: Sans-Serif;
+  overflow-x: hidden;
+}
+body {
+  text-align: center;
+  font-family: 'Courier New',
+    Courier,
+    monospace;
   margin: 0;
-  background-color: #005606;
+  padding: 0;
+  background-color: #f8f8f8;
 }
 
 .menu-container {
@@ -150,19 +156,10 @@ body {
 }
 
 
-body {
-  text-align: center;
-  font-family: 'Courier New',
-    Courier,
-    monospace;
-  margin: 0;
-  padding: 0;
-  background-color: #f8f8f8;
-}
+
 
 .container {
-  max-width: 11000px;
-  min-width: fit-content;
+  max-width: 1100px;
   margin-top: 0;
   text-align: center;
   background-color: #fff;
@@ -198,6 +195,19 @@ h1 {
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
+.options {
+  font-size: large;
+  color: rgb(255, 255, 255);
+  display: none;
+  background-color: #005606;
+  border-radius: 150px;
+  font-style: italic;
+  width: 40%;
+  top: 50%;
+  left: 50%;
+  transform: translate(75%, 190%);
+}
+
 .cocktail-item:hover {
   transform: scale(1.05);
   background-color: #aceaac;
@@ -208,17 +218,4 @@ h1 {
   max-height: 150px;
   object-fit: cover;
   border-radius: 15px;
-}
-
-.options {
-  font-size: large;
-  color: rgb(255, 255, 255);
-  display: none;
-  background-color: #4ba050;
-  border-radius: 150px;
-  font-style: italic;
-  width: 40%;
-  top: 50%;
-  left: 50%;
-  transform: translate(75%, 190%);
 }
