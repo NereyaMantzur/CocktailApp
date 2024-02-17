@@ -3,7 +3,7 @@ function toggleOptions(event, cocktailName) {
   let clickedOptions = event.currentTarget.querySelector(".options");
 
   if (clickedOptions.style.display === "block") {
-    clickedOptions.style.display = "none";
+    
   } else {
     // Close options for all items
     let allOptions = document.querySelectorAll(".options");
@@ -19,7 +19,8 @@ function toggleOptions(event, cocktailName) {
   event.stopPropagation();
 }
 
-function close(event) {
-    
+function order(evnt) {
+  let example =  
+  body.style.display = "none";
 }
  

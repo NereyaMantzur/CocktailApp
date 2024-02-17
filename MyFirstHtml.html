@@ -26,7 +26,7 @@
         <img src="margarita.jpg" alt="Margarita" />
         <p>Margarita</p>
         <div class="options">
-          <p class="cocktail-order"> <b>Order!</b></p>
+          <p class="cocktailOrder"> <b>Order!</b></p>
         </div>
       </div>
 
@@ -34,7 +34,7 @@
         <img src="martini.jpg" alt="Martini" />
         <p>Martini</p>
         <div class="options">
-          <p class="cocktail-order"> <b>Order!</b></p>
+          <p class="cocktailOrder"> <b>Order!</b></p>
         </div>
       </div>
 
@@ -42,7 +42,7 @@
         <img src="bloodyMary.jpg" alt="Bloody Mary" />
         <p>Bloody Mary</p>
         <div class="options">
-          <p class="cocktail-order"> <b>Order!</b></p>
+          <p class="cocktailOrder"> <b>Order!</b></p>
         </div>
       </div>
 
@@ -50,10 +50,39 @@
         <img src="pinaColada.avif" alt="Pina Colada" />
         <p>Pina Colada</p>
         <div class="options">
-          <p class="cocktail-order"> <b>Order!</b></p>
+          <p class="cocktailOrder"> <b>Order!</b></p>
         </div>
 
         <!-- Add more cocktail items as needed -->
+      </div>
+      <div class="cocktail-item" onclick="toggleOptions(event,'diy')">
+        <img src="diy.jpg" alt="diy" />
+        <p>DIY</p>
+        <div class="options">
+          <label> Select first 30 ml<br></label>
+          <select class="choose">
+            <option>tequilla</option>
+            <option>vodka</option>
+            <option>gin</option>
+            <option>rum</option>
+          </select>
+          <label><br>Select second 30 ml<br></label>
+          <select class="choose">
+            <option>tequilla</option>
+            <option>vodka</option>
+            <option>gin</option>
+            <option>rum</option>
+          </select>
+          <label><br>Select third 30 ml<br></label>
+          <select class="choose">
+            <option>tequilla</option>
+            <option>vodka</option>
+            <option>gin</option>
+            <option>rum</option>
+          </select>
+
+          <p class="cocktailOrder" onclick="oreder(diy)"> <b>Order!</b></p>
+        </div>
       </div>
     </div>
 
