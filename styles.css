@@ -56,7 +56,6 @@ h1 {
 
 .cocktailItem {
   font-size: larger;
-  font-weight: bold;
   cursor: pointer;
   text-align: center;
   padding: 10px;
@@ -79,9 +78,8 @@ h1 {
 .cocktailOrder {
   font-size: large;
   color: rgb(255, 255, 255);
-  background-color: #5a5a5a;
+  background-color: #889488;
   border-radius: 150px;
-  font-style: italic;
   width: 40%;
   top: 50%;
   left: 50%;
