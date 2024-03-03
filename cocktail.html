@@ -1,14 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <title>Afeka Cocktails</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="apple-touch-icon" href="./images/icon.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
+
 <body>
-    this is another page
+    <nav class="container">
+        <nav class="menu-container">
+            <!-- logo -->
+            <a href="https://nereyamantzur.github.io/CocktailApp/MyFirstHtml.html" class="menu-logo">
+                <img src="./images/logo.png" alt="My Awesome Website" />
+            </a>
+
+        </nav>
+        <h1>Cocktail Menu</h1>
+        <div class="cocktail-grid" id="cocktailItem ">
+
+            <div class="cocktailItem" onclick="toggleOptions(event,'Margarita')">
+                <img src="./images/margarita.jpg" alt="Margarita" />
+                <p>Margarita</p>
+                <div class="options">
+                    <p class="cocktailOrder"> <b>Order!</b></p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <h5>
+        <footer>
+            <p>&copy; 2024 Afeka cocktail machine</p>
+        </footer>
+    </h5>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
