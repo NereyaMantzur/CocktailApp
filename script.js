@@ -22,6 +22,7 @@ orders.forEach(function (element) {
   element.addEventListener("click", orderThis);
 });
 function orderThis() {
+  window.location.href= "https://nereyamantzur.github.io/CocktailApp/cocktail.html";
   alert("preparing your order...");
 }
 
