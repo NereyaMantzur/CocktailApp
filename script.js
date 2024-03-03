@@ -23,7 +23,6 @@ orders.forEach(function (element) {
 });
 function orderThis() {
   window.location.href= "https://nereyamantzur.github.io/CocktailApp/cocktail.html";
-  alert("preparing your order...");
 }
 
 //TODO: HELP TH FCK OUTTTTTTT
