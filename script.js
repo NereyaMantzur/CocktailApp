@@ -22,7 +22,8 @@ orders.forEach(function (element) {
   element.addEventListener("click", orderThis);
 });
 function orderThis() {
-  window.location.href= "https://nereyamantzur.github.io/CocktailApp/cocktail.html";
+  window.location.href =
+    "https://nereyamantzur.github.io/CocktailApp/margarita.html";
 }
 
 //TODO: HELP TH FCK OUTTTTTTT
