@@ -17,24 +17,13 @@ function toggleOptions(event, cocktailName) {
   event.stopPropagation();
 }
 
-function order(event) {
-  let example = (body.style.display = "none");
+var orders = document.querySelectorAll(".cocktailOrder");
+orders.forEach(function (element) {
+  element.addEventListener("click", orderThis);
+});
+function orderThis() {
+  alert("preparing your order...");
 }
-
-function addCocktail(event) {
-  event.preventDefault();
-  let cocktailName = event.target.name.value;
-  let cocktailIngredients = event.target.ingredients.value;
-  let cocktailInstructions = event.target.instructions.value;
-  let newCocktail = new Cocktail(cocktailName, cocktailIngredients, cocktailInstructions);
-  cocktailList.push(newCocktail);
-  event.target.name.value = "";
-  event.target.ingredients.value = "";
-  event.target.instructions.value = "";
-}
-
-
-
 
 //TODO: HELP TH FCK OUTTTTTTT
 //FIXME: HELP TH FCK OUTTTTTTT
