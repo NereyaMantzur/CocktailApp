@@ -104,3 +104,12 @@ h1 {
   font: 1em 'Courier New';
   font-weight: bold;
 }
+
+.details-img img{
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.details{
+  text-align: left;
+}
