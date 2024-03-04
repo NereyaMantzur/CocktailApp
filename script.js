@@ -21,9 +21,11 @@ var orders = document.querySelectorAll(".cocktailOrder");
 orders.forEach(function (element) {
   element.addEventListener("click", orderThis);
 });
-function orderThis() {
+function orderThis(event) {
+  alert(event.currentTarget.getAttribute("id"));
+  var cocktailName = event.currentTarget.getAttribute("id");
   window.location.href =
-    "https://nereyamantzur.github.io/CocktailApp/margarita.html";
+    "https://nereyamantzur.github.io/CocktailApp/" + cocktailName + ".html";
 }
 
 //TODO: HELP TH FCK OUTTTTTTT
