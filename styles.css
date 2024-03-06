@@ -99,17 +99,27 @@ h1 {
   background-color: #edffee;
   padding: 10px;
   border-radius: 5px;
-  box-shadow:  1px 1px 2px;
+  box-shadow: 1px 1px 2px;
   font-size: large;
   font: 1em 'Courier New';
   font-weight: bold;
 }
 
-.details-img img{
+.details-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.details img {
   max-width: 100%;
   border-radius: 15px;
 }
 
-.details{
+.details {
+  max-width:1000px;
+  display: grid;
   text-align: left;
+  align-items: center;
+  justify-items: center;
 }
